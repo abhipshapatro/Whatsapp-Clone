@@ -94,3 +94,9 @@
     font-size: 22px;
     cursor: pointer;
 }
+
+/* emoji-picker css */
+.emoji-picker-react{
+    position: absolute !important;
+    top: -325px;
+}
