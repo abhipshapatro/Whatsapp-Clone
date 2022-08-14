@@ -7,6 +7,9 @@ const Home = () => {
     <div className="home">
         <div className="home-container">
             <Sidebar />
+            <div className="home-bg">
+              <img src="images/WhatsAppbg.png" alt="" />
+            </div>
         </div>
     </div>
   )
