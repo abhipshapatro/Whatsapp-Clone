@@ -1,11 +1,11 @@
-import React from 'react'
-import ChatContainer from './ChatContainer'
-import Sidebar from './Sidebar'
-import './ChatPage.css'
+import React from "react";
+import ChatContainer from "./ChatContainer";
+import Sidebar from "./Sidebar";
+import "./ChatPage.css";
 
-function ChatPage({currentUser}){
+function ChatPage({ currentUser }) {
   return (
-    <div className='chat-page'>
+    <div className="chat-page">
       {/* sidebar */}
       <div className="chat-page-container">
         <Sidebar currentUser={currentUser} />
@@ -14,7 +14,7 @@ function ChatPage({currentUser}){
         {/* chat search */}
       </div>
     </div>
-  )
+  );
 }
 
-export default ChatPage
+export default ChatPage;
