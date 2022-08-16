@@ -16,8 +16,8 @@ function App() {
         {user ? (
           <>
             <Routes>
-              <Route path="/chatpage" element={<ChatPage />} />
-              <Route path="/" element={<Home />} />
+              <Route path="/chatpage" element={<ChatPage currentUser={user} />} />
+              <Route path="/" element={<Home currentUser={user} />} />
             </Routes>
           </>
         ) : (
