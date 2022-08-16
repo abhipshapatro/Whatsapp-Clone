@@ -6,7 +6,9 @@ import Login from "./components/Login";
 import ChatPage from "./components/ChatPage";
 
 function App() {
-  const [user, setUser] = useState();
+  const [user, setUser] = useState(JSON.parse(localStorage.getItem("user")));
+
+  console.log(user)
 
   return (
     <Router>
@@ -19,7 +21,7 @@ function App() {
             </Routes>
           </>
         ) : (
-          <Login />
+          <Login setUser={setUser} />
         )}
       </div>
     </Router>
